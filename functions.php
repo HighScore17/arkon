@@ -72,6 +72,16 @@ function blankslate_footer()
                     scrollTop: $("#form-get-a-demo-container").offset().top
                 }, 2000);
             })
+            $("#get-a-demo2").on("click", function (){
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#form-get-a-demo-container").offset().top
+                }, 2000);
+            })
+            $("#get-a-demo3").on("click", function (){
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#form-get-a-demo-container").offset().top
+                }, 2000);
+            })
 
         });
     </script>

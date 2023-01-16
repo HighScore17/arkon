@@ -11,7 +11,7 @@
                     Disrupt salvia bespoke craft beer master cleanse. Butcher cornhole gentrify pop-up, raw denim viral
                     literally.</p>
             </div>
-            <button>DISCOVER MORE</button>
+            <button id="get-a-demo3">DISCOVER MORE</button>
         </div>
     </div>
     <div class="right-side">
