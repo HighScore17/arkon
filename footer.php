@@ -1,8 +1,9 @@
 </main>
 </div>
 <footer id="footer" role="contentinfo">
+    <div class="separator"></div>
 <div id="copyright">
-&copy; <?php echo esc_html( date_i18n( __( 'Y', 'blankslate' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+    All Rights Reserved @ 2019 Arkon Data  |  More information:  info@arkondata.com
 </div>
 </footer>
 </div>

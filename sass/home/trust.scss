@@ -1,0 +1,116 @@
+.trust {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(160deg, white, white 60%, #efefef 60%, #efefef);
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .title p {
+      color: #4a4a4a;
+      font-family: SF Pro Display;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 25px;
+    }
+
+    .subtitle p {
+      margin-top: 0px;
+      color: #4a4a4a;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-bottom: 27px;
+    }
+
+    .content p {
+      height: 194px;
+      width: 357px;
+      color: #4a4a4a;
+      font-family: SF Pro Display;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 21px;
+    }
+
+    button {
+      height: 40px;
+      max-width: 220px;
+      width: 100%;
+      border: unset;
+      border-radius: 17px;
+      background-color: #009fdc;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 19px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trust {
+    padding: 60px 0px;
+
+    .left-side {
+      .title p {
+        font-size: 20px;
+      }
+
+      .subtitle p {
+        font-size: 25px;
+      }
+    }
+
+    .right-side {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .trust .left-side .content {
+    padding: 35px 10px;
+    p {
+      max-width: 357px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 759px) and (max-width: 1100px) {
+  .trust {
+    flex-wrap: unset;
+    padding: 40px 0px;
+
+    .left-side {
+      .data {
+        padding: 30px;
+      }
+      .subtitle p {
+        font-size: 30px;
+      }
+    }
+
+    .right-side {
+      img {
+        position: relative;
+        float: right;
+        width: 400px;
+      }
+    }
+  }
+}

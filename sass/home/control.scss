@@ -1,0 +1,131 @@
+.control {
+  width: 100%;
+  min-height: 613px;
+  background-size: cover !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 11px 18px 0 rgba(0, 0, 0, 0.34);
+
+  .left-side,
+  .right-side {
+    width: 50%;
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title p {
+      color: #4a4a4a;
+      font-family: SF Pro Display;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: 25px;
+    }
+
+    .subtitle p {
+      margin-top: 0px;
+      color: #4a4a4a;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-bottom: 27px;
+    }
+
+    .content p {
+      height: 194px;
+      width: 357px;
+      color: #4a4a4a;
+      font-family: SF Pro Display;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 21px;
+    }
+
+    button {
+      height: 40px;
+      max-width: 220px;
+      width: 100%;
+      border: unset;
+      border-radius: 17px;
+      background-color: #3dc0cb;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 19px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .control {
+    background-position: -490px 0px !important;
+
+    .left-side {
+      display: none;
+    }
+
+    .right-side {
+      width: 100% !important;
+      justify-content: flex-end;
+      margin-left: 20px;
+
+      .title {
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .subtitle {
+        p {
+          font-size: 25px;
+        }
+      }
+
+      .data {
+        position: relative;
+        top: -130px !important;
+
+        .content {
+          p {
+            width: 240px;
+          }
+        }
+        button {
+          position: relative;
+          top: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1100px) {
+  .main-content .control {
+    background-position: -280px 0px !important;
+    min-height: 620px;
+
+    .right-side {
+      width: 50%;
+
+      .data {
+        position: relative;
+        top: 0px;
+      }
+      .subtitle p {
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.get-a-demo {
+  background: #efefef;
+  padding-top: 120px;
+  display: flex;
+
+  .left-side {
+    border-radius: 0 60px 60px 0;
+    background: linear-gradient(
+      312.51deg,
+      #3dc0cb 0%,
+      #0aa4d9 22.04%,
+      #0f4b90 82.79%,
+      #122336 100%
+    );
+    height: 692px;
+    width: 100%;
+    min-width: 905px;
+    max-width: 905px;
+
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%;
+
+      #form-get-a-demo-container {
+        margin-right: 130px;
+
+        h2,
+        h1,
+        p {
+          color: #fff;
+        }
+
+        .title {
+          font-family: SF Pro Display;
+          font-size: 48px;
+          letter-spacing: 0;
+          line-height: 56px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+        }
+
+        .subtitle {
+          font-family: Montserrat;
+          font-size: 83px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 55px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+        }
+
+        .banner {
+          font-family: Montserrat;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 25px;
+          text-align: center;
+          max-width: 462px;
+          width: 100%;
+          margin: 24px auto 9px auto;
+        }
+
+        #form-get-a-demo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          .form-control {
+            height: 40px;
+            max-width: 376px;
+            width: 100%;
+            border: 2px solid #ffffff;
+            border-radius: 25px;
+            margin-bottom: 17px;
+            padding-left: 30px;
+            background: transparent;
+            color: #fff;
+
+            &::placeholder {
+              color: #fff;
+              font-family: Montserrat;
+              font-size: 12px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 15px;
+            }
+            &:focus-visible {
+              outline: unset;
+            }
+          }
+
+          .button-submit {
+            height: 40px;
+            width: 100%;
+            max-width: 410px;
+            border-radius: 17px;
+            background-color: #ffffff;
+            border: unset;
+            color: #009fdc;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 19px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+      #form-get-demo-requested {
+        h4 {
+          color: #fff;
+          font-size: 40px;
+          text-align: center;
+        }
+        h4.title {
+          font-family: Montserrat;
+        }
+        h4.subtitle {
+          font-family: SF Pro Display;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    .demo-image {
+      width: 700px;
+      position: absolute;
+      right: 0;
+
+      img {
+        position: absolute;
+        top: 185px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .get-a-demo {
+    padding-top: unset;
+
+    .left-side {
+      min-width: unset;
+      border-radius: unset;
+      height: unset;
+
+      .form {
+        padding: 40px 17px 0px 17px;
+        height: unset;
+
+        #form-get-a-demo-container {
+          margin-right: unset;
+
+          #form-get-a-demo {
+            padding: 40px;
+
+            input {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .right-side {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .get-a-demo {
+    .left-side {
+      max-width: 60% !important;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+
+  #footer {
+    .separator {
+      background: #0d2643;
+      height: 120px;
+      width: 100%;
+    }
+    #copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      background-color: #071526;
+      color: #ffffff;
+      font-family: SF Pro Display;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  body #footer {
+    .separator {
+      display: none;
+    }
+    #copyright {
+      font-size: 14px;
+    }
+  }
+}
