@@ -93,7 +93,7 @@
                     });
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    setError(' Failed to request the coupon. ')
+                    setError(' Failed to send demo request ')
                 }
             })
         } else {

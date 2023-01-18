@@ -257,36 +257,11 @@ function send_contact_email() {
                                                             <table width='100%' cellspacing='0' cellpadding='0'>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td class='esd-container-frame' width='580' valign='top' align='center'>
+                                                                        <td class='esd-container-frame' width='580' valign='top' align='left'>
                                                                             <table width='100%' cellspacing='0' cellpadding='0'>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td class='esd-block-image' align='center' style='font-size:0'><a href='https://viewstripo.email' target='_blank'><img src='https://arkon-test-c4f69b.ingress-comporellon.ewp.live/wp-content/uploads/2023/01/arkon-logo.png' alt='Arkon Data Logo' title='Arkon Data Logo' width='109'></a></td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class='esd-structure es-p5r es-p5l' style='background-color: #4a7eb0;' bgcolor='#4a7eb0' align='left'>
-                                                            <table width='100%' cellspacing='0' cellpadding='0'>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class='esd-container-frame' width='590' valign='top' align='center'>
-                                                                            <table width='100%' cellspacing='0' cellpadding='0'>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td class='esd-block-menu' esd-img-prev-h='16' esd-img-prev-w='16'>
-                                                                                            <table class='es-menu' width='100%' cellspacing='0' cellpadding='0'>
-                                                                                                <tbody>
-                                                                                                    <tr class='links'></tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
+                                                                                        <td class='esd-block-image' align='left' style='font-size:0'><a href='https://arkon-test-c4f69b.ingress-comporellon.ewp.live/' target='_blank'><img src='https://arkon-test-c4f69b.ingress-comporellon.ewp.live/wp-content/uploads/2023/01/logo_arkon.png' alt='Arkon Data Logo' title='Arkon Data Logo' width='109'></a></td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -306,7 +281,7 @@ function send_contact_email() {
                                 <tbody>
                                     <tr>
                                         <td class='esd-stripe' esd-custom-block-id='3109' align='center'>
-                                            <table class='es-content-body' style='background-color: #ffffff;' width='600' cellspacing='0' cellpadding='0' bgcolor='#ffffff' align='center'>
+                                            <table class='es-content-body' style='background-color: #ffffff; margin-bottom: 50px' width='600' cellspacing='0' cellpadding='0' bgcolor='#ffffff' align='center'>
                                                 <tbody>
                                                     <tr>
                                                         <td class='esd-structure es-p20t es-p20b es-p40r es-p40l' esd-general-paddings-checked='true' align='left'>
@@ -318,12 +293,12 @@ function send_contact_email() {
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td class='esd-block-text' align='left'>
-                                                                                            <h1 style='color: #4a7eb0;'>NEW DEMO REQUEST</h1>
+                                                                                            <h1 style='color: #0d2643;'>NEW DEMO REQUEST</h1>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            <table>
+                                                                            <table style='margin-right: auto;' align='left'>
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td align='left' colspan='1'>
@@ -358,6 +333,7 @@ function send_contact_email() {
                                             </table>
                                         </td>
                                     </tr>
+                                    <hr>
                                     <tr>
                                         <td class='esd-structure es-p20t es-p20b es-p40r es-p40l' esd-general-paddings-checked='true' align='left'>
                                             <table width='100%' cellspacing='0' cellpadding='0'>
@@ -369,9 +345,9 @@ function send_contact_email() {
                                                                     <tr>
                                                                         <td class='esd-block-spacer es-p20t es-p20b es-p5r' align='center' style='font-size:0'>
                                                                             <table width='100%' height='100%' cellspacing='0' cellpadding='0' border='0'>
-                                                                                <tbody>
+                                                                                <tbody style='text-align: center; margin-bottom:50px;'>
                                                                                     <tr>
-                                                                                        <td style='border-bottom: 1px solid #ffffff; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: 1px; width: 100%; margin: 0px;'></td>
+                                                                                        <td><a target='_blank' href='https://www.linkedin.com/company/arkondata/'><img width='30' src='https://arkon-test-c4f69b.ingress-comporellon.ewp.live/wp-content/uploads/2023/01/linkedin_logo.png'></a></td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -400,7 +376,6 @@ function send_contact_email() {
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers .= 'From: luis.angel.jleon@gmail.com' . "\r\n";
     wp_mail( "marketing@arkondata.com", $subject, $content, $headers );
-
     wp_mail( "luis.angel.jleon@gmail.com", $subject, $content, $headers );
 
 }
